@@ -47,7 +47,7 @@ def stats(update, context):
             f'<b>├  🎮 RAM : {memory}%</b>\n' \
             f'<b>├  💽 DISK : {disk}%</b>\n' \
             f'<b>│</b>\n' \
-            f'<b>╰──「 🚸 @AT_BOTs 🚸 」</b>'
+            f'<b>╰──「 🚸 [ZEN] Leecher 🚸 」</b>'
     update.effective_message.reply_photo(IMAGE_URL, stats, parse_mode=ParseMode.HTML)
 
 
@@ -58,7 +58,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
     buttons = button_build.ButtonMaker()
     buttons.buildbutton("Repo", "https://github.com/ayushteke/slam_aria_mirror_bot_HEROKU")
-    buttons.buildbutton("Support Group", "https://t.me/AT_BOTs_support")
+    buttons.buildbutton("Support Group", "https://t.me/joinchat/Roea9e8jXHWm5W86")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(update.message.chat.id, update.message.chat.username, update.message.text))
     uptime = get_readable_time((time.time() - botStartTime))
